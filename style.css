@@ -1,0 +1,19 @@
+#Intro {
+    text-align: center;
+}
+
+#SwitchHand {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#timer {
+    font-size: 75px;
+}
+
+body {
+    background-color: rgb(58, 39, 71);
+}
