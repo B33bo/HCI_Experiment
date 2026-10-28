@@ -1,33 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <title>Human Capabilities - Aim Trainer</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1 id="text">Aim Trainer</h1>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HCI Experiment</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+        <button class="button-default button-enabled">Start</button>
+        <button class="button-default button-enabled" style="display: none;" id="resetButton">Reset</button>
+        <p id="time">..</p>
+        <div id="stimulus">
+            <div id="instructions">
+                Aim and click the button as fast as you can!
+            </div>
+            <div class="circle inactive"></div>
 
-<body>
-    <div id="Intro">
-        <h1>Aim Tester</h1>
-        <p>By Brandon, David, and Ethan</p>
-        <button onclick="StartGame()">BEGIN</button>
-    </div>
-    <div id="SwitchHand">
-        <h1>Please switch to your</h1>
-        <h1>Dominant hand</h1>
-        <button onclick="HandSwitched()">Okay</button>
-        <h1 id="timer"></h1>
-    </div>
-    <div id="Game">
-
-    </div>
-    <div id="End">
-
-    </div>
-    <script src="index.js"></script>
-</body>
-
+        </div>    
+        <script src="scriptAimtrainer.js"></script>
+    </body>
 </html>

@@ -14,6 +14,82 @@
     font-size: 75px;
 }
 
+.circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 5px solid gray;
+  border-radius: 175px;
+  display: flex;
+}
+
+.inactive {
+  background-color: #c6dbf7;
+}
+.active {
+  background-color: orange;
+}
+
+.circle.inactive { visibility: hidden; }
+.circle.active   { visibility: visible; }
+
+div#stimulus {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 10px 50px;
+  border: 1px solid #888;
+}
+
+div#instructions {
+  max-width: 350px;
+  margin-left: 50px;
+  background-color: #c6dbf7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.button-default {
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  white-space: nowrap;
+  margin: 10px 95px;
+  max-width:170px;
+  display:block;
+  text-align:center;
+  font-weight:bolder;
+}
+
+span#time{
+  text-align:center;
+  background-color:white;
+  padding:5px;
+  flex-grow:0;
+  border-radius:5px;
+}
+
+.button-disabled {
+  background-color: #ccc; /* Change the background color */
+  color: #888; /* Change the text color */
+  cursor: not-allowed; /* Change the cursor style */
+  opacity: 0.8; /* Change the opacity to make it look disabled */
+}
+
+.button-enabled{
+  background: #ffffff;
+  color: #000;
+  cursor: pointer;
+  opacity:1.0;
+}
+
 body {
     background-color: rgb(58, 39, 71);
 }
